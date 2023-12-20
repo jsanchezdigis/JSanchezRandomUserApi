@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewData["Title"] = "GetAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <h2>Usuario</h2>
+    </div>
+    <hr />
+
+    <div class="row">
+        <div style="float:right">
+            <button type="button" class="btn btn-success" id="btnAdd" onclick="Add()">Agregar Empleado</button>
+        </div>
+    </div>
+    <hr />
+
+    <div class="row">
+
+        <table class="table table-bordered table-responsive table-hover" id="tblUsuario">
+            <thead>
+                <tr>
+
+                    <td class="text-center" style=" font-weight:bold;">Foto</td>
+                    <td class="text-center" style=" font-weight:bold;">Nombre</td>
+                    <td class="text-center" style=" font-weight:bold;">Email</td>
+                    <td class="text-center" style=" font-weight:bold;">Direccion</td>
+                    <td class="text-center" style=" font-weight:bold;">Genero</td>
+
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/Script.js"></script>
+}
+
